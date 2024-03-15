@@ -1,0 +1,19 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+}
+.textBox{
+    font-family: Pretendard;
+    font-size: 2rem;
+    color: grey;
+}
+a{
+    color: white;
+}
+a1{
+    color:blueviolet;
+}
+.infos{
+    color: white;
+    font-size: 3rem;
+}

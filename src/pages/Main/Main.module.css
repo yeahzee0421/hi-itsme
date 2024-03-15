@@ -1,0 +1,14 @@
+.header{
+  display: flex;
+  height: 30px;
+}
+.slider{
+    width: 100%;
+    height: 100vh;
+}
+.object{
+  /* display: flex; */
+  /* idth: 100vw; */
+  height: 100vh;
+  overflow: hidden;
+}
