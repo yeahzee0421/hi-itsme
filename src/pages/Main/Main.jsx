@@ -1,79 +1,47 @@
 import { useEffect, useState } from "react";
 import s from "./Main.module.css";
-import One from "../One/One";
+import AboutMe from "../AboutMe/AboutMe";
+import Projects from "../Projects/Projects";
+import Home from "../Home/Home";
 import Header from "../../components/Header/Header";
 
 function Main() {
+  const [currentPage, setCurrentPage] = useState(0);
 
-    const wholePage = document.getElementsByClassName("slider");
-    const totalPageNumber = wholePage[0]?.children?.length;
-  
-    const [currentInputs, setCurrentInputs] = useState({
-      currentWindowHeight: window.innerHeight,
-      currentPage: 0,
-    });
-  
-    const setPageSize = () => {
-      setCurrentInputs((prevState) => ({
-        ...prevState,
-        currentWindowHeight: window.innerHeight,
-      }));
-    };
-    const setPage = () => {
-      for (let i = 1; i < totalPageNumber; i++) {
-        if (window.scrollY < currentInputs.currentWindowHeight * i) {
-          setCurrentInputs({ ...currentInputs, currentPage: i });
-          return;
-        }
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const objectHeight = window.innerHeight;
+      const totalPages = 3;
+      const newPage = Math.floor(scrollTop / objectHeight);
+      if (currentPage !== newPage && newPage >= 0 && newPage < totalPages) {
+        setCurrentPage(newPage);
       }
     };
-  
-    useEffect(() => {
-      window.addEventListener("scroll", setPage);
-      window.addEventListener("resize", setPageSize);
-      return () => {
-        window.removeEventListener("scroll", setPage);
-        window.removeEventListener("resize", setPageSize);
-      };
-    });
-  
-    window.addEventListener("wheel", (e) => {
-      if (e.deltaY > 0) {
-        let p = 1;
-        while (p < totalPageNumber) {
-          if (currentInputs.currentPage === p) {
-            window.scrollTo({
-              top: currentInputs.currentWindowHeight * p,
-              behavior: "smooth",
-            });
-          }
-          p++;
-        }
-      }
-      if (e.deltaY < 0) {
-        let p = 1;
-        while (p < totalPageNumber) {
-          if (currentInputs.currentPage === p) {
-            window.scrollTo({
-              top: currentInputs.currentWindowHeight * (p - 1),
-              behavior: "smooth",
-            });
-          }
-          p++;
-        }
-      }
-    });
-  
-    return (
-      <>
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [currentPage]);
+
+  return (
+    <>
       <div className={s.header}><Header /></div>
-      <div className={s.slider}>
+      <div className={s.slider} style={{ transform: `translateY(-${currentPage * 100}vh)` }}>
         <div className={s.object}>
-          <One />
+          <Home />
         </div>
-        <div className={s.object}>two</div>
-      </div></>
-    );
-  }
-  
+        <div className={s.object}>
+          <AboutMe />
+        </div>
+        <div className={s.object}>
+          <Projects />
+        </div>
+      </div>
+    </>
+  );
+}
+
 export default Main;

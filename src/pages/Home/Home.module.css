@@ -1,6 +1,9 @@
 .wrapper{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 .textBox{
     font-family: Pretendard;
@@ -16,4 +19,8 @@ a1{
 .infos{
     color: white;
     font-size: 3rem;
+}
+.heartIcon{
+    width: 130px;
+    height: 100px;
 }

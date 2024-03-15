@@ -20,3 +20,8 @@ li{
     margin-left: 20px;
     margin-right: 20px;
 }
+li:hover{
+    color: blueviolet;
+    cursor: pointer;
+    font-size: large;
+}
