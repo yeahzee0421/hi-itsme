@@ -40,7 +40,7 @@
 }
 .text{
      list-style: none;  
-     font-size: 20px;
+     font-size: 16px;
      font-weight: 600; 
      margin-bottom: 5px;
      @media (max-width: 390px){
