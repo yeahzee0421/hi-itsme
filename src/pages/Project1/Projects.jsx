@@ -13,10 +13,10 @@ export default function Three(){
   const navigate = useNavigate();
   return (
     <div className={s.wrapper}>
-      <h2>Projects</h2>
+      <h2 className={s.title}>Projects</h2>
       <div className={s.container}>
         <div className={s.textBox}>
-          <h3>🍪가장 솔직한 감정 SNS: 머랭🍪 (2024.01~2024.02)</h3>
+          <h3 className={s.projName}>🍪가장 솔직한 감정 SNS: 머랭🍪 (2024.01~2024.02)</h3>
         </div>
         <button 
           className={s.buttonModal} 

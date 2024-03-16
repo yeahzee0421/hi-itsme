@@ -4,7 +4,7 @@
   justify-content: center;
   flex-direction: column;
   margin-top: 50px;
-  @media (max-width: 390px) {
+  @media (max-width: 510px) {
     margin-top: 50px;
 }
 }
@@ -30,7 +30,7 @@
 .object{
   /* width: 100vw; */
   height: 100vh;
-  @media (min-width: 390px) {
+  @media (min-width: 510px) {
     height: calc(var(--vh, 1vh) * 100);
   }  
 }

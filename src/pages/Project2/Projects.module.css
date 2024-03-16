@@ -16,9 +16,9 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     margin-bottom: 50px;
-    @media (min-width: 390px) {
+    @media (max-width: 510px) {
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -30,11 +30,11 @@ h2{
     align-items: center;
     text-align: center;
 }
-h3{
+.projName{
     font-family: 'EF_jejudoldam';
     font-size: 24px;
     font-weight: 700;
-    @media (max-width: 390px) {
+    @media (max-width: 510px) {
         font-size: 16px;
     }
 }

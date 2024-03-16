@@ -14,7 +14,7 @@ export default function Three(){
     <div className={s.wrapper}>
       <div className={s.container}>
         <div className={s.textBox}>
-          <h3>👕What is your OOTD? WIYO🧦 (2023.11)</h3>
+          <h3 className={s.projName}>👕What is your OOTD? WIYO🧦 (2023.11)</h3>
         </div>
         <button 
           className={s.buttonModal} 

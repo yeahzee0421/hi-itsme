@@ -4,8 +4,9 @@ export default function Two(){
     return(
         <>
         <div className= {s.wrapper}>
-            <h2>About Me</h2>
+            <h2 className={s.title}>About Me</h2>
             <div className={s.container}>
+            <img className={s.profilePic} src="./images/profile-2.png" />
                 <div className={s.left}>
                     <div className={s.top}>
                         <h3>🔍Profile</h3>
@@ -17,10 +18,9 @@ export default function Two(){
                         <h5>강원대학교 컴퓨터공학과 과동아리 ‘블렌딩’ 운영 <a3>2022.8~2023.02</a3></h5>
                         <h5>강원지역혁신플랫폼 정밀의료사업단 메이커톤 경진대회 사업단장상</h5>
                         <h5>2023년도 춘천 창업도시 창업아이디어 발굴 경진대회 본선 <a3>2023.4</a3></h5>
-                        <h5>알고리즘 스터디 ‘감자두리’ 운영  <a3>2023.12 - 현재</a3></h5>
                     </div>
                 </div>
-                <img className={s.profilePic} src="./images/profile-2.png" />
+                
                 <div className={s.right}>
                 <h3>✨Career</h3>
                         <h4> 강원대학교 멋쟁이사자처럼 <a3>2023.03~현재</a3></h4>

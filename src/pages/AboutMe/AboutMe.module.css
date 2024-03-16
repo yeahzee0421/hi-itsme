@@ -7,12 +7,12 @@
     font-family: Pretendard;
     color: black;
 }
-h2{
+.title{
     font-family: 'EF_jejudoldam';
     font-size: 3rem;
     color: blueviolet;
-    @media (max-width: 390px) {
-        font-size: 1.3rem;
+    @media (max-width: 510px) {
+        font-size: 2rem;
     }
 }
 .container{
@@ -20,31 +20,51 @@ h2{
     flex-direction: row;
     align-items: center;
     flex-wrap:nowrap;
+    @media (max-width: 510px) {
+        flex-wrap: wrap-reverse;
+    }
 }
 .profilePic{
     border-radius: 10%;
     width: 300px;
     height: 400px;
+    @media (max-width: 510px) {
+        visibility:hidden;
+    }
 }
 .left{
     width: 250px;
+    margin-right: 25px;
 }
 .right{
     width: 250px;
 }
 h3{
     font-size: 20px;
+    font-family: 'EF_jejudoldam';
+    @media (max-width: 510px) {
+        font-size: 16px;
+    }
 }
 h4{
     font-size: 16px;
+    @media (max-width: 510px) {
+        font-size: 12px;
+    }
 }
 h5{
     font-weight: 500;
     font-size: 14px;
     color: #2e2e2e;
+    @media (max-width: 510px) {
+        font-size: 12px;
+    }
 }
 a3{
     color: gray;
     font-weight: 500;
     font-size: 12px;
+    @media (max-width: 510px) {
+        font-size: 10px;
+    }
 }
