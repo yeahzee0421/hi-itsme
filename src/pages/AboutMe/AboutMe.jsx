@@ -6,7 +6,7 @@ export default function Two(){
         <div className= {s.wrapper}>
             <h2 className={s.title}>About Me</h2>
             <div className={s.container}>
-            <img className={s.profilePic} src="./images/profile-2.png" />
+            
                 <div className={s.left}>
                     <div className={s.top}>
                         <h3>🔍Profile</h3>
@@ -32,6 +32,7 @@ export default function Two(){
                         <h5>  • 2023 고용노동부 소셜벤처 경진대회 입상</h5>
                         <h5>  • 2023 MG 청년 로컬 창업캠프 우수상</h5>
                 </div>
+                <img className={s.profilePic} src="./images/profile-2.png" />
             </div>
         </div>
         </>
