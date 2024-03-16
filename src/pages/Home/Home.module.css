@@ -5,12 +5,13 @@
     align-items: center; 
     text-align: center;
     flex-direction: column;
+    font-family: Pretendard;
 }
 .textBox{
-    font-family: Pretendard;
+    font-weight: 600;
     font-size: 1.5rem;
     color: grey;
-    @media screen and (max-width: 540px){
+    @media screen and (max-width: 390px){
         font-size: 1rem;
     }
 }
@@ -26,7 +27,7 @@ a1{
 .infos{
     color: black;
     font-size: 2rem;
-    @media screen and (max-width: 540px){
+    @media screen and (max-width: 390px){
         font-size: 1.5rem;
     }
 }
@@ -34,7 +35,7 @@ a1{
     margin-top: -20px;
     width: 130px;
     height: 100px;
-    @media screen and (max-width: 540px){
+    @media screen and (max-width: 390px){
         width: 100px;
         height: 80px;
     }
