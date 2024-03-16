@@ -41,7 +41,7 @@ function Main() {
   };
 
   return (
-    <>
+    <div className={s.wrap}>
       <div className={s.header}><Header scrollToSection={scrollToSection} /></div>
       <div className={s.slider} style={{ transform: `translateY(-${currentPage * 100}vh)` }}>
         <div id="home" className={s.object}><Home /></div>
@@ -50,7 +50,7 @@ function Main() {
         <div id="project2" className={s.object}><Project2 /></div>
         <div id="others" className={s.object}><Others /></div>
       </div>
-    </>
+    </div>
   );
 }
 
