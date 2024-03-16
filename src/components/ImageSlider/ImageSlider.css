@@ -1,9 +1,9 @@
 .image-slider img {
     width: 800px; 
     height: auto;
-    @media (max-width: 430px) {
+    @media screen and (max-width: 540px){
       width: 400px;
-    }
+  }
   }
 .image-slider{
   display: flex;

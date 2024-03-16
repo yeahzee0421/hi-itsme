@@ -5,12 +5,14 @@
     align-items: center; 
     text-align: center;
     flex-direction: column;
-    
 }
 .textBox{
     font-family: Pretendard;
     font-size: 2rem;
     color: grey;
+    @media screen and (max-width: 540px){
+        font-size: 1.5rem;
+    }
 }
 a{
     color: black;
@@ -21,9 +23,16 @@ a1{
 .infos{
     color: black;
     font-size: 3rem;
+    @media screen and (max-width: 540px){
+        font-size: 2rem;
+    }
 }
 .heartIcon{
     margin-top: -20px;
     width: 130px;
     height: 100px;
+    @media screen and (max-width: 540px){
+        width: 100px;
+        height: 80px;
+    }
 }

@@ -14,7 +14,7 @@ export default function Detail(){
     const navigate = useNavigate();
     return(
         <>
-        <AiOutlineClose style={{"color": "#51372B"}} onClick={() => { navigate(`/`);}}/>
+        <AiOutlineClose style={{"color": "black"}} onClick={() => { navigate(`/`);}}/>
         <div className={s.wrapper}>
             <img src={WIYO} className={s.icon} />
 

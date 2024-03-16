@@ -8,10 +8,16 @@
 .icons{
     height: 100px;
     margin-bottom: -50px;
+    @media screen and (max-width: 540px){
+        height: 100px;
+    }
 }
 .icon2{
     height: 100px;
     margin-bottom: -50px;
+    @media screen and (max-width: 540px){
+        height: 70px;
+    }
 }
 .container{
     margin-top: -30px;
@@ -20,8 +26,8 @@
     border-radius: 20px;
     height: auto;
     padding: 30px;
-    @media (max-width: 430px) {
-      width: 400px;
+    @media screen and (max-width: 540px){
+        width: 400px;
     }
     
 }
@@ -35,6 +41,9 @@
      font-size: 20px;
      font-weight: 600; 
      margin-bottom: 5px;
+     @media (max-width: 540px){
+        font-size: 12px;
+    }
 }
 .about{
     text-indent: 2em;
@@ -44,9 +53,16 @@
 .detail{
     text-indent: 4em;
     font-size: 16px;
+    @media (max-width: 540px){
+        font-size: 10px;
+    }
 }
 h6{
     font-size: 32px;
+    text-align: center;
+    @media screen and (max-width: 540px){
+        font-size: 24px;
+    }
 }
 .shortcut{
     text-decoration-line: none;
