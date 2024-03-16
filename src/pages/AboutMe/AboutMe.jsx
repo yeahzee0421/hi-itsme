@@ -1,5 +1,5 @@
 import s from './AboutMe.module.css';
-import profile from '/images/profile-2.png';
+// import profile from './images/profile-2.png';
 export default function Two(){
     return(
         <>
@@ -20,7 +20,7 @@ export default function Two(){
                         <h5>알고리즘 스터디 ‘감자두리’ 운영  <a3>2023.12 - 현재</a3></h5>
                     </div>
                 </div>
-                <img className={s.profilePic} src={profile} />
+                <img className={s.profilePic} src="./images/profile-2.png" />
                 <div className={s.right}>
                 <h3>✨Career</h3>
                         <h4> 강원대학교 멋쟁이사자처럼 <a3>2023.03~현재</a3></h4>

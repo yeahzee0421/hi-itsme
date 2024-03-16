@@ -1,26 +1,27 @@
 import s from "./Detail.module.css"
-import frame5 from '/images/Frame 425.png';
-import Arch from '/images/Arch.png';
-import flow from '/images/WebFlow.png';
 import ImageSlider from "../../../components/ImageSlider/ImageSlider";
-import WIYO from "/images/WIYO.png";
-import icon from "/images/uniIcon.png";
+// import WIYO from "./images/WIYO.png";
+// import icon from "./images/uniIcon.png";
 import { AiOutlineClose } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
 
 export default function Detail(){
-    const images_WIYO = [frame5, Arch, flow];
+    const images_WIYO = [
+        "./images/Frame 425.png",
+        "./images/Arch.png",
+        "./images/WebFlow.png"
+    ];
     const navigate = useNavigate();
     return(
         <>
-        <AiOutlineClose style={{"color": "black"}} onClick={() => { navigate(`/`);}}/>
+        <AiOutlineClose className={s.close} style={{"color": "black"}} onClick={() => { navigate(`/`);}}/>
         <div className={s.wrapper}>
-            <img src={WIYO} className={s.icon} />
+            <img src="./images/WIYO.png" className={s.icon} />
 
             <h6>What is your OOTD? WIYO</h6>
             <ImageSlider images={images_WIYO} />
-            <img src={icon} className={s.icon2} />
+            <img src="./images/uniIcon.png" className={s.icon2} />
             <h6>About</h6>
             <ul className={s.container}>
                 <li className={s.text}>📅기간: 2023.11.03~2023.11.15</li>

@@ -1,27 +1,26 @@
 import s from "./Detail.module.css"
-import frame1 from '/images/Frame 221.png';
-import frame2 from '/images/Frame 222.png';
-import frame3 from '/images/Frame 223.png';
-import frame4 from '/images/Frame 224.png';
 import ImageSlider from "../../../components/ImageSlider/ImageSlider";
-import cookie from "/images/003.png";
-import calendar from "/images/004.png";
 import { AiOutlineClose } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
 
 export default function Detail(){
-    const images = [frame1, frame2, frame3, frame4]; 
+    const images = [
+        "./images/Frame 221.png",
+        "./images/Frame 222.png",
+        "./images/Frame 223.png",
+        "./images/Frame 224.png"
+    ];  
     const navigate = useNavigate();
     return(
         <>
-        <AiOutlineClose style={{"color": "#51372B"}} onClick={() => { navigate(`/`);}}/>
+        <AiOutlineClose className={s.close} style={{"color": "#51372B"}} onClick={() => { navigate(`/`);}}/>
         <div className={s.wrapper}>
-            <img src={cookie} className={s.icons} />
+            <img src="./images/003.png" className={s.icons} />
 
             <h6>가장 솔직한 감정 SNS: 머랭</h6>
             <ImageSlider images={images} />
-            <img src={calendar} className={s.icon2} />
+            <img src="./images/004.png" className={s.icon2} />
             <h6>About</h6>
             <ul className={s.container}>
                 <li className={s.text}>📅기간: 2024.01~ 2024.02</li>
