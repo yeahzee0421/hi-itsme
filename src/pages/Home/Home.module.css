@@ -8,10 +8,10 @@
 }
 .textBox{
     font-family: Pretendard;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: grey;
     @media screen and (max-width: 540px){
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 }
 a{
@@ -20,11 +20,14 @@ a{
 a1{
     color:blueviolet;
 }
+.hello{
+    font-size: 28px;
+}
 .infos{
     color: black;
-    font-size: 3rem;
+    font-size: 2rem;
     @media screen and (max-width: 540px){
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }
 .heartIcon{

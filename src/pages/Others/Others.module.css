@@ -1,0 +1,47 @@
+.wrapper{
+    padding-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.containerContact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.card{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+hh2{
+    font-size: 16px;
+    color: gray;
+}
+hh3{
+    font-size: 14px;
+    font-family: 'EF_jejudoldam';
+    
+}
+hh6{
+    color: blueviolet;
+    font-family: 'EF_jejudoldam';
+    font-size: 28px;
+    text-align: center;
+}
+.gogo{
+    text-decoration-line: none;
+}
+.gogo:hover{
+    transition: all 0.3s;
+    font-size: large;
+}

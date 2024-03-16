@@ -7,9 +7,9 @@
 }
 .icons{
     height: 100px;
-    margin-bottom: -50px;
+    margin-bottom: -40px;
     @media screen and (max-width: 540px){
-        height: 100px;
+        height: 80px;
     }
 }
 .icon2{
@@ -59,6 +59,7 @@
 }
 h6{
     font-size: 32px;
+    font-family: 'EF_jejudoldam';
     text-align: center;
     @media screen and (max-width: 540px){
         font-size: 24px;
@@ -69,7 +70,7 @@ h6{
 }
 .shortcut:hover{
     transition: all 0.3s;
-    color: blueviolet;
+    color: #FFB897;
     font-weight: bold;
 }
 .shorttext{

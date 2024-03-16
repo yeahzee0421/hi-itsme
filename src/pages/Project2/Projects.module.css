@@ -1,0 +1,57 @@
+.wrapper{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    flex-direction: column;
+
+    font-family: Pretendard;
+    color: black; 
+}
+h2{
+        font-size: 3rem;
+        color: blueviolet;
+    }
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 50px;
+    @media (min-width: 430px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* flex-wrap: wrap; */
+    }
+}
+.textBox{
+    width: 430px;
+    align-items: center;
+    text-align: center;
+}
+h3{
+    font-family: 'EF_jejudoldam';
+    font-size: 24px;
+    font-weight: 700;
+    @media (max-width: 400px) {
+        font-size: 16px;
+    }
+}
+.buttonModal{
+    background-color:rgba(137, 43, 226, 0.616);
+    border: none;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-family: Pretendard;
+    font-size: 14px;
+    margin-top: -5px;
+    margin-bottom: 30px;
+}
+.buttonModal:hover{
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 17px;
+    transition: all 0.5s ;
+}

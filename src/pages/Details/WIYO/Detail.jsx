@@ -18,7 +18,7 @@ export default function Detail(){
         <div className={s.wrapper}>
             <img src={WIYO} className={s.icon} />
 
-            <h6>What it your OOTD? WIYO</h6>
+            <h6>What is your OOTD? WIYO</h6>
             <ImageSlider images={images_WIYO} />
             <img src={icon} className={s.icon2} />
             <h6>About</h6>

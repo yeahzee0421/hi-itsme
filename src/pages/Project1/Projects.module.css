@@ -14,8 +14,9 @@ h2{
     }
 .container{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
-    flex-wrap: wrap;
     margin-bottom: 50px;
     @media (min-width: 430px) {
         flex-direction: column;
@@ -30,10 +31,11 @@ h2{
     text-align: center;
 }
 h3{
-    font-size: 28px;
+    font-family: 'EF_jejudoldam';
+    font-size: 24px;
     font-weight: 700;
     @media (max-width: 400px) {
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 .buttonModal{
@@ -42,7 +44,7 @@ h3{
     border-radius: 10px;
     color: rgb(255, 255, 255);
     font-family: Pretendard;
-    font-size: 16px;
+    font-size: 14px;
     margin-top: -5px;
     margin-bottom: 30px;
 }

@@ -4,14 +4,16 @@ import heart from "/images/heart.png";
 export default function One() {
   return (
     <div className={s.wrapper}>
+      <img className={s.heartIcon} src={heart} /> 
       <div className={s.textBox}>
-        <h1><a>다채롭고</a> <a1>매력적인</a1></h1>
-        <h1>웹서비스를 만들어 나가요.</h1>
+        <h1><a1>웹</a1>이라는 <a>도화지에</a></h1>
+        <h1>꿈을 그려나가는</h1>
       </div>
       <div className={s.infos}>
+        {/* <a className={s.hello}>hello, I'm</a> */}
         <h1>YeJi Lee</h1>
       </div>
-      <img className={s.heartIcon} src={heart} /> 
+      
     </div>
   );
 }
