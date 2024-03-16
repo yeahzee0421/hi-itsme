@@ -1,13 +1,15 @@
 .wrapper{
     display: flex;
+    justify-content: center; 
+    align-items: center; 
     flex-direction: column;
-    align-items: center;
+
     font-family: Pretendard;
-    color: white;
-    h2{
-        font-size: 3rem;
-        color: blueviolet;
-    }
+    color: black;
+}
+h2{
+    font-size: 3rem;
+    color: blueviolet;
 }
 .container{
     display: flex;
@@ -16,14 +18,14 @@
 }
 .profilePic{
     border-radius: 10%;
-    width: 400px;
-    height: 500px;
+    width: 300px;
+    height: 400px;
 }
 .left{
-    width: 300px;
+    width: 240px;
 }
 .right{
-    width: 300px;
+    width: 240px;
 }
 h3{
     font-size: 20px;
@@ -32,8 +34,9 @@ h4{
     font-size: 16px;
 }
 h5{
-    font-weight: 300;
+    font-weight: 500;
     font-size: 14px;
+    color: #2e2e2e;
 }
 a3{
     color: gray;

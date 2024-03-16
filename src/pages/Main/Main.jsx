@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import s from "./Main.module.css";
 import AboutMe from "../AboutMe/AboutMe";
+import Header from "../../components/Header/Header";
 import Projects from "../Projects/Projects";
 import Home from "../Home/Home";
-import Header from "../../components/Header/Header";
+// import Header from "../../components/Header/Header";
 
 function Main() {
   const [currentPage, setCurrentPage] = useState(0);

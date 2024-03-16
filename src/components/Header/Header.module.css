@@ -1,0 +1,20 @@
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.menu{
+    color: black;
+    list-style: none;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-weight: 600;
+}
+.menu:hover{
+    color: blueviolet;
+    cursor: pointer;
+    font-size: large;
+    transition: all 0.3s ;
+}
